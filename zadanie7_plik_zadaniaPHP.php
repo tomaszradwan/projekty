@@ -6,10 +6,10 @@
  */
 
 
-$newFile = fopen("zabytkiKrakowa.txt", 'w') or die("NIE");
+$newFile = fopen("zabytkiKrakowa.txt", 'w') or die("Nie utworzono pliku");
 
 
-    $text = "
+$text = <<<_END
 1. Wawel
 2. Kościół Mariacki
 3. Sukiennice
@@ -19,14 +19,16 @@ $newFile = fopen("zabytkiKrakowa.txt", 'w') or die("NIE");
 7. Barbakan
 8. Kazimierz (dzielnica krakowska)
 9.Kościół Karmelitów
-10. Teatr i. J. Słowackiego   
-";
+10. Teatr i. J. Słowackiego
+        
+        autor:TR
+_END;
 
-fwrite($newFile, $text) or die("NIE____");
+fwrite($newFile, $text) or die("Nie zapisano pliku");
 fclose($newFile);
-echo "Plik zapisany";
+echo "Plik zabytkiKrakowa.txt zapisany";
 
 
 
-        
-        
+
+
