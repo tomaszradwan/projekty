@@ -1,11 +1,11 @@
 <?php
 
 /*
-  Napisz instrukcję która wypisze większą wartość z dwóch podanych
+  Napisz instrukcję która wypisze większą wartość z dwóch podanych.
  */
 
-$i = 4;
-$j = 25;
+$i = 47;
+$j = 256;
 
 if ($i > $j) {
     echo $i;
